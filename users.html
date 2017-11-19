@@ -1,17 +1,16 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css">
+		
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 		<script>
-            $(document).ready(function){
-              $('#submit').click(function){
+            $(document).ready(function(){
+              $('#submit').click(function(){
                   $('.table').append('<tr><td>' + $('input[name="first_name"]').val()+ '<td></td>'
                     + $('input[name="last_name"]').val()+ '<td></td>'
                     + $('input[name="email"]').val()+ '<td></td>'
                     + $('input[name="phone_number"]').val()+ '<td></td>');
-                  return false;
-                  
+                 return false;
               });
             });
 
